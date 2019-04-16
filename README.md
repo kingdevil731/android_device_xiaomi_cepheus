@@ -12,9 +12,9 @@ It was announced in February 2019.
 Basic   | Spec Sheet
 -------:|:-------------------------
 SoC     | Qualcomm SDM855 Snapdragon 855
-CPU     | Octa-core (1x2.84ghz Kryo 485 Gold 3x2.42 GHz Kryo 485 Gold & 4x1.8 GHz Kryo 485 Silver)
+CPU     | Octa-core (1x2.84Ghz Kryo 485 Gold 3x2.42GHz Kryo 485 Gold & 4x1.8GHz Kryo 485 Silver)
 GPU     | Adreno 640
-Memory  | 6-12 GB RAM
+Memory  | 6/8/12 GB RAM
 Shipped Android Version | 9 with MIUI 10
 Storage | 64/128/256 GB
 Battery | Non-removable Li-Ion 3300 mAh battery
