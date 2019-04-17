@@ -5,7 +5,6 @@
 #
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/cepheus/cepheus-vendor.mk)
