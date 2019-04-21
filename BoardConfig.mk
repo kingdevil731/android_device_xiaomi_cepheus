@@ -25,6 +25,9 @@ DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 # NFC
 TARGET_USES_NQ_NFC := true
 
+# Partitions
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472 #3072M
+
 # Power
 # TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
 
