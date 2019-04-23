@@ -28,13 +28,13 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Inherit from sdm855-common
 $(call inherit-product, device/xiaomi/sdm855-common/sdm855.mk)
 
-# Device fstab
+# init scripts
 PRODUCT_PACKAGES += \
-    fstab.qcom
-
-# Device init scripts
-PRODUCT_PACKAGES += \
-    init.target.rc
+    fstab.qcom \
+    init.batteryd.rc \
+    init.mi_thermald.rc \
+    init.recovery.qcom.rc \
+    init.usb.configfs.rc
 
 # HIDL
 PRODUCT_COPY_FILES += \
