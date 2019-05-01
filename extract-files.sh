@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-set -e
+set -e -u -o
 
 export DEVICE=cepheus
 export DEVICE_COMMON=sdm855-common
