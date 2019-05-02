@@ -18,8 +18,6 @@ TARGET_OTA_ASSERT_DEVICE := cepheus
 # Kernel
 TARGET_KERNEL_CONFIG := cepheus_user_defconfig
 
-#TARGET_NO_KERNEL := true
-
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 
