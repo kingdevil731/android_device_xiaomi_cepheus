@@ -28,13 +28,17 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Inherit from sdm855-common
 $(call inherit-product, device/xiaomi/sdm855-common/sdm855.mk)
 
-# init scripts
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.batteryd.rc \
-    init.mi_thermald.rc \
-    init.recovery.qcom.rc \
-    init.usb.configfs.rc
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/vendor/init.msm.usb.configfs.rc:vendor/init/hw/init.msm.usb.configfs.rc \
+    $(LOCAL_PATH)/rootdir/vendor/init.qcom.factory.rc:vendor/init/hw/init.qcom.factory.rc \
+    $(LOCAL_PATH)/rootdir/vendor/init.qcom.rc:vendor/init/hw/init.qcom.rc \
+    $(LOCAL_PATH)/rootdir/vendor/init.qcom.usb.rc:vendor/init/hw/init.qcom.usb.rc \
+    $(LOCAL_PATH)/rootdir/vendor/init.target.rc:vendor/init/hw/init.target.rc \
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:vendor/etc/fstab.qcom \
+    $(LOCAL_PATH)/rootdir/init.batteryd.rc:$(TARGET_ROOT_OUT)/init.batteryd.rc \
+    $(LOCAL_PATH)/rootdir/init.recovery.qcom.rc:$(TARGET_ROOT_OUT)init.recovery.qcom.rc \
+    $(LOCAL_PATH)/rootdir/init.usb.configfs.rc:$(TARGET_ROOT_OUT)init.usbconfigfs.rc
+
 
 # HIDL
 PRODUCT_COPY_FILES += \
