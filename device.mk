@@ -32,12 +32,6 @@ $(call inherit-product, device/xiaomi/sdm855-common/sdm855.mk)
 $(call inherit-product-if-exists, vendor/xiaomi/cepheus/cepheus-vendor.mk)
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/vendor/init.msm.usb.configfs.rc:vendor/init/hw/init.msm.usb.configfs.rc \
-    $(LOCAL_PATH)/rootdir/vendor/init.qcom.factory.rc:vendor/init/hw/init.qcom.factory.rc \
-    $(LOCAL_PATH)/rootdir/vendor/init.qcom.rc:vendor/init/hw/init.qcom.rc \
-    $(LOCAL_PATH)/rootdir/vendor/init.qcom.usb.rc:vendor/init/hw/init.qcom.usb.rc \
-    $(LOCAL_PATH)/rootdir/vendor/init.target.rc:vendor/init/hw/init.target.rc \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:vendor/etc/fstab.qcom \
     $(LOCAL_PATH)/rootdir/init.batteryd.rc:$(TARGET_ROOT_OUT)/init.batteryd.rc \
     $(LOCAL_PATH)/rootdir/init.recovery.qcom.rc:$(TARGET_ROOT_OUT)init.recovery.qcom.rc \
     $(LOCAL_PATH)/rootdir/init.usb.configfs.rc:$(TARGET_ROOT_OUT)init.usbconfigfs.rc
@@ -72,8 +66,7 @@ PRODUCT_PACKAGES += \
     Tag
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
-    $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+    $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf
 
 # PocketMode
 PRODUCT_PACKAGES += \
