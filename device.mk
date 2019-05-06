@@ -28,6 +28,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Inherit from sdm855-common
 $(call inherit-product, device/xiaomi/sdm855-common/sdm855.mk)
 
+# Inherit cepheus vendor
+$(call inherit-product-if-exists, vendor/xiaomi/cepheus/cepheus-vendor.mk)
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/vendor/init.msm.usb.configfs.rc:vendor/init/hw/init.msm.usb.configfs.rc \
     $(LOCAL_PATH)/rootdir/vendor/init.qcom.factory.rc:vendor/init/hw/init.qcom.factory.rc \
